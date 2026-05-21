@@ -1,0 +1,240 @@
+:root {
+  --brand: #4967e6;
+  --brand-light: #91a8f0;
+  --accent: #f89d2a;
+  --background: #f7f9fb;
+  --surface: #ffffff;
+  --gray: #444746;
+  --shadow: 0 4px 24px rgba(34,68,210,0.07);
+
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: var(--background);
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 4rem 0 3rem 0;
+}
+
+.hero {
+  background: radial-gradient(ellipse at 80% 10%, #f2fafc 60%, #c1e2fc 110%), linear-gradient(100deg, #cfdcf8 0%, #f7f9fb 60%);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: var(--brand);
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #222;
+  max-width: 480px;
+  margin: 0 auto 2rem auto;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.85em 2.5em;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  color: #fff;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 18px rgba(73,103,230, 0.15);
+  transition: background .23s, transform .15s;
+  margin-top: 0.8rem;
+}
+.cta:hover {
+  background: linear-gradient(100deg, var(--brand-light), var(--accent));
+  transform: scale(1.045);
+}
+
+/* SERVICES SECTION */
+.services h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--gray);
+}
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.service-card {
+  background: var(--surface);
+  flex: 1 1 220px;
+  max-width: 320px;
+  border-radius: 18px;
+  padding: 2.2rem 1.2rem 1.3rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.service-card:hover {
+  transform: translateY(-7px) scale(1.034);
+  box-shadow: 0 8px 28px rgba(34,68,210,0.09);
+}
+.service-card img {
+  width: 68px;
+  margin-bottom: 0.9rem;
+}
+.service-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--brand);
+  font-size: 1.32rem;
+  margin: 0 0 0.45rem 0;
+}
+.service-card p {
+  color: #50597f;
+}
+
+/* ABOUT */
+.about-grid {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+  flex-wrap: wrap;
+}
+.about-text {
+  flex: 2 1 330px;
+}
+.about-img {
+  border-radius: 16px;
+  max-width: 340px;
+  width: 95%;
+  flex: 1 1 240px;
+  box-shadow: 0 2px 28px rgba(120,148,156, 0.12);
+}
+
+.about h2 {
+  color: var(--brand);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.085rem;
+  font-weight: 500;
+}
+
+/* CONTACT */
+.contact {
+  background: linear-gradient(100deg, #f6f7ff 45%, #e9f3ff 90%);
+  border-top: 1px solid #e0e5f1;
+  border-bottom: 1px solid #e0e5f1;
+}
+
+.contact h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--brand);
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-size: 2rem;
+}
+
+#contact-form {
+  max-width: 440px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1.8rem 1.5rem 1.2rem;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.3rem;
+}
+input, textarea {
+  resize: none;
+  padding: 0.85em 1.1em;
+  border-radius: 7px;
+  border: 1.5px solid #dde7ff;
+  font-size: 1.08em;
+  margin-top: 0.18rem;
+  font-family: 'Open Sans', sans-serif;
+  background: #f8faff;
+  transition: border-color .18s;
+}
+input:focus, textarea:focus {
+  border-color: var(--brand);
+  outline: none;
+}
+
+textarea {
+  min-height: 88px;
+  font-size: 1.05em;
+}
+#form-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.06em;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  padding: 2.2rem 0 1.3rem 0;
+  text-align: center;
+  color: #788488;
+  font-size: 1.01rem;
+  background: none;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+  .about-grid, .services-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .about-img {
+    margin-top: 2rem;
+    max-width: 98vw;
+  }
+}
+
+@media (max-width:600px) {
+  html { font-size: 15px; }
+  .hero h1 { font-size: 2.02rem; }
+  .about-text p, .service-card p { font-size: 0.97rem;}
+  .container { padding: 0 0.55rem;}
+  section { padding: 2.1rem 0 1.3rem 0; }
+  .cta { padding: 0.72em 1.3em; font-size:1rem;}
+  .service-card { padding: 1.7rem 0.5rem 1.1rem;}
+  .services h2, .about h2, .contact h2 { font-size: 1.33rem;}
+}
+
+/* Extra polish on focus states */
+input:focus, textarea:focus, .cta:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
